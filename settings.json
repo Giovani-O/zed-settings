@@ -1,0 +1,62 @@
+{
+  "show_completion_documentation": false,
+  "inlay_hints": {
+    "show_parameter_hints": true,
+    "show_type_hints": true,
+    "show_value_hints": true,
+    "show_other_hints": true,
+  },
+  "disable_ai": false,
+  "theme": "Rich Vesper",
+  "agent_servers": {
+    "opencode": {
+      "type": "registry",
+      "favorite_models": [
+        "github-copilot/claude-haiku-4.5",
+        "opencode/big-pickle",
+        "github-copilot/claude-sonnet-4.6",
+        "github-copilot/gpt-5-mini",
+        "github-copilot/claude-opus-4.6",
+        "opencode/minimax-m2.5-free",
+        "opencode/nemotron-3-super-free",
+      ],
+    },
+  },
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["vtsls", "eslint", "biome"],
+      "formatter": { "language_server": { "name": "biome" } },
+      "format_on_save": "on",
+      "use_on_type_format": false, // FIX that annoying gap when closing brackets
+    },
+    "TSX": {
+      "language_servers": ["vtsls", "eslint", "biome"],
+      "formatter": { "language_server": { "name": "biome" } },
+      "format_on_save": "on",
+      "use_on_type_format": false, // FIX that annoying gap when closing brackets
+    },
+    "JavaScript": {
+      "language_servers": ["vtsls", "eslint", "biome"],
+      "formatter": { "language_server": { "name": "biome" } },
+      "format_on_save": "on",
+      "use_on_type_format": false, // FIX that annoying gap when closing brackets
+    },
+  },
+  "lsp": {
+    "biome": {
+      "initialization_options": {
+        "capabilities": {
+          "completionProvider": false,
+          "documentOnTypeFormattingProvider": false,
+          "documentRangeFormattingProvider": true,
+          "documentFormattingProvider": true,
+        },
+      },
+    },
+  },
+  "show_edit_predictions": false, // Desabilita sugestões de código
+  "show_completions_on_input": true, // Habilita sugestões de completions
+  "always_treat_brackets_as_autoclosed": false,
+  "use_autoclose": true,
+  "use_auto_surround": true,
+}
