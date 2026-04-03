@@ -1,4 +1,12 @@
 {
+  "terminal": {
+    "shell": {
+      "program": "bash",
+    },
+    "env": {
+      "PS1": "\\w $ ",
+    },
+  },
   "show_completion_documentation": false,
   "inlay_hints": {
     "show_parameter_hints": true,
