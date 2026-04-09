@@ -1,4 +1,5 @@
 {
+  "icon_theme": "FantastIcons Icon Theme",
   "terminal": {
     "shell": {
       "program": "bash",
@@ -9,14 +10,18 @@
   },
   "show_completion_documentation": false,
   "inlay_hints": {
+    "enabled": false,
     "show_parameter_hints": true,
     "show_type_hints": true,
     "show_value_hints": true,
     "show_other_hints": true,
   },
   "disable_ai": false,
-  "theme": "Rich Vesper",
+  "theme": "Cyberdyne Ghostty",
   "agent_servers": {
+    "qwen-code": {
+      "type": "registry"
+    },
     "opencode": {
       "type": "registry",
       "favorite_models": [
