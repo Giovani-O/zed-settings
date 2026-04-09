@@ -7,6 +7,10 @@
     "env": {
       "PS1": "\\w $ ",
     },
+    "font_family": "JetBrains Mono",
+    "font_size": 15,
+    // Terminal line height: comfortable (1.618), standard(1.3) or `{ "custom": 2 }`
+    "line_height": "standard",
   },
   "show_completion_documentation": false,
   "inlay_hints": {
@@ -20,7 +24,7 @@
   "theme": "Cyberdyne Ghostty",
   "agent_servers": {
     "qwen-code": {
-      "type": "registry"
+      "type": "registry",
     },
     "opencode": {
       "type": "registry",
@@ -72,4 +76,62 @@
   "always_treat_brackets_as_autoclosed": false,
   "use_autoclose": true,
   "use_auto_surround": true,
+
+  // UI Font. Use ".SystemUIFont" to use the default system font (SF Pro on macOS),
+  // or ".ZedSans" for the bundled default (currently IBM Plex)
+  "ui_font_family": "Geist",
+  "ui_font_weight": 400, // Font weight in standard CSS units from 100 to 900.
+  "ui_font_size": 16,
+
+  // Buffer Font - Used by editor buffers
+  // use ".ZedMono" for the bundled default monospace (currently Lilex)
+  "buffer_font_family": "JetBrains Mono", // Font name for editor buffers
+  "buffer_font_size": 15, // Font size for editor buffers
+  "buffer_font_weight": 400, // Font weight in CSS units [100-900]
+  // Line height "comfortable" (1.618), "standard" (1.3) or custom: `{ "custom": 2 }`
+  "buffer_line_height": "comfortable",
+  "buffer_font_features": {
+    "calt": true,
+  },
+
+  // Controls the font size for agent responses in the agent panel.
+  // If not specified, it falls back to the UI font size.
+  "agent_ui_font_size": 15,
+  // Controls the font size for the agent panel's message editor, user message,
+  // and any other snippet of code.
+  "agent_buffer_font_size": 12,
+
+  // Cursor
+  "cursor_shape": "block",
+
+  // Sticky Scroll
+  "sticky_scroll": {
+    "enabled": true,
+  },
+
+  // Minimap related settings
+  "minimap": {
+    "show": "auto", // When to show (auto, always, never)
+    "display_in": "active_editor", // Where to show (active_editor, all_editor)
+    "thumb": "always", // When to show thumb (always, hover)
+    "thumb_border": "left_open", // Thumb border (left_open, right_open, full, none)
+    "max_width_columns": 80, // Maximum width of minimap
+    "current_line_highlight": null, // Highlight current line (null, line, gutter)
+  },
+
+  // Scrollbar related settings
+  "scrollbar": {
+    // When to show the scrollbar in the editor (auto, system, always, never)
+    "show": "auto",
+    "cursors": true, // Show cursor positions in the scrollbar.
+    "git_diff": true, // Show git diff indicators in the scrollbar.
+    "search_results": true, // Show buffer search results in the scrollbar.
+    "selected_text": true, // Show selected text occurrences in the scrollbar.
+    "selected_symbol": true, // Show selected symbol occurrences in the scrollbar.
+    "diagnostics": "all", // Show diagnostics (none, error, warning, information, all)
+    "axes": {
+      "horizontal": true, // Show/hide the horizontal scrollbar
+      "vertical": true, // Show/hide the vertical scrollbar
+    },
+  },
 }
