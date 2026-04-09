@@ -1,0 +1,7 @@
+id = "sea-shells"
+name = "Sea Shells"
+version = "0.0.1"
+schema_version = 1
+authors = ["Murasaki"]
+description = "Sea Shells"
+repository = "https://github.com/your-name/my-zed-extension"
