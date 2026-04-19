@@ -1,4 +1,24 @@
 {
+  "edit_predictions": {
+    "provider": "copilot",
+  },
+  "context_servers": {
+    "mcp-server-playwright": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "vision": true,
+        "browser": "firefox",
+      },
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "remote": false,
+      "settings": {
+        "context7_api_key": "ctx7sk-30fa0508-a19b-4e6a-a8b9-631c61268403",
+      },
+    },
+  },
   "icon_theme": "FantastIcons Icon Theme",
   "terminal": {
     "shell": {
@@ -21,9 +41,9 @@
     "show_other_hints": true,
   },
   "disable_ai": false,
-  "theme": "Cyberdyne Ghostty",
+  "theme": "Tokyo Night",
   "agent_servers": {
-    "qwen-code": {
+    "github-copilot-cli": {
       "type": "registry",
     },
     "opencode": {
