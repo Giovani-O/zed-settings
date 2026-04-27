@@ -1,0 +1,7 @@
+id = "enten-kuro"
+name = "Enten Kuro"
+version = "0.0.1"
+schema_version = 1
+authors = ["Murasaki"]
+description = "Theme inspired by Enten, the seventh enchanted blade in Kagurabachi."
+repository = "https://github.com/your-name/my-zed-extension"
